@@ -56,27 +56,23 @@ One-click setup scripts for Shell (macOS) and PowerShell (Windows).
 
 ```mermaid
 graph TD
-    subgraph "Windows PC (Client)"
-        Win[Windows 10/11]
-        Speaker[Speakers/Headphones]
+    subgraph "Windows PC"
+        Win["Windows 10/11"]
+        Speaker["Speakers/Headphones"]
     end
 
-    subgraph "Mac (Server)"
-        Mac[macOS (Mac mini / MacBook)]
+    subgraph "Macbook etc."
+        Mac["macOS"]
         Keyboard[Keyboard]
         Mouse[Mouse]
     end
 
-    %% DeskFlow Control Flow
     Mac <-->|DeskFlow / TCP| Win
-    
-    %% File Sharing
+
     Mac <-->|SMB File Share / WiFi 6| Win
-    
-    %% Audio Flow
+
     Mac -- Audio / AUX Cable --> Win
-    
-    %% Hardware Connections
+
     Keyboard --> Mac
     Mouse --> Mac
     Win --> Speaker
