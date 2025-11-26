@@ -1,3 +1,7 @@
+<div align="right">
+  简体中文 | <a href="./README_en.md">English</a>
+</div>
+
 # 🌉 Win-Mac DeskBridge 局域网极致互联方案
 
 ![License](https://img.shields.io/badge/license-MIT-green) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-blue) ![Status](https://img.shields.io/badge/maintenance-active-success)
