@@ -6,7 +6,7 @@
 
 ## 📖 简介 (Introduction)
 
-**Win-Mac DeskBridge** 不是一个单一的软件，而是一套经过实战验证的**局域网互联协议（Protocol）**。
+**Win-Mac DeskBridge** 不是一个单一的软件，而是一套经过实战验证的**局域网互联解决方案**。
 
 本方案专为**Windows + MacOS**的双机党设计。我们利用 DeskFlow、SMB、LocalSend 等开源/原生技术，实现了**0 成本**的硬件级体验：
 
