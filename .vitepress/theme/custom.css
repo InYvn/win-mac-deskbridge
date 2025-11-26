@@ -1,0 +1,146 @@
+/* .vitepress/theme/custom.css */
+
+/* =========================================
+   1. 核心变量定义 (极光蓝紫调)
+   ========================================= */
+:root {
+  /* 品牌主色调：更有科技感的蓝紫色渐变基调 */
+  --vp-c-brand-1: #5B8FF9;
+  --vp-c-brand-2: #8065E8;
+  --vp-c-brand-3: #A575EB;
+  
+  /* 定义极光背景色 (浅色模式) */
+  --aurora-bg-1: rgba(91, 143, 249, 0.15);
+  --aurora-bg-2: rgba(128, 101, 232, 0.15);
+}
+
+.dark {
+  /* 定义极光背景色 (深色模式) */
+  --aurora-bg-1: rgba(56, 94, 235, 0.2);
+  --aurora-bg-2: rgba(111, 76, 227, 0.2);
+}
+
+/* =========================================
+   2. 全局动态背景
+   ========================================= */
+body {
+  background-color: var(--vp-c-bg);
+  /* 使用多层径向渐变模拟极光效果 */
+  background-image: 
+    radial-gradient(circle at 15% 50%, var(--aurora-bg-1), transparent 40%),
+    radial-gradient(circle at 85% 30%, var(--aurora-bg-2), transparent 40%);
+  background-attachment: fixed; /* 背景固定，不随滚动条滚动 */
+  background-size: 100% 100%;
+}
+
+/* =========================================
+   3. 首页 Hero (大标题) 优化
+   ========================================= */
+.VPHero .name {
+  /* 文字渐变填充 */
+  background: -webkit-linear-gradient(120deg, #5B8FF9 30%, #A575EB);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 2em rgba(91, 143, 249, 0.3)); /* 文字柔和发光 */
+  padding-bottom: 10px; /* 防止发光被切断 */
+}
+
+/* Hero 区域进场动画 */
+.VPHero .name, .VPHero .text, .VPHero .tagline, .VPHero .actions {
+  opacity: 0;
+  animation: slide-up-fade-in 0.8s cubic-bezier(0.25, 0.1, 0.25, 1.0) forwards;
+}
+.VPHero .name { animation-delay: 0.1s; }
+.VPHero .text { animation-delay: 0.2s; }
+.VPHero .tagline { animation-delay: 0.3s; }
+.VPHero .actions { animation-delay: 0.4s; }
+
+@keyframes slide-up-fade-in {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =========================================
+   4. 特性卡片重构 (毛玻璃 + Bento 风格)
+   ========================================= */
+.VPFeature {
+  background-color: rgba(255, 255, 255, 0.3) !important; /* 浅色模式背景 */
+  backdrop-filter: blur(12px); /* 毛玻璃模糊核心 */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4) !important; /* 玻璃边框 */
+  border-radius: 16px !important;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  cursor: pointer; /* 鼠标变手型 */
+  position: relative;
+  overflow: hidden;
+}
+
+.dark .VPFeature {
+  background-color: rgba(30, 30, 30, 0.3) !important; /* 深色模式背景 */
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+/* 悬停交互：上浮 + 光影增强 */
+.VPFeature:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 
+    0 20px 40px -10px rgba(0, 0, 0, 0.15), 
+    0 0 20px rgba(91, 143, 249, 0.1) inset; /* 内发光 */
+}
+
+.dark .VPFeature:hover {
+  background-color: rgba(50, 50, 50, 0.4) !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   5. 页面切换动画 (View Transitions)
+   ========================================= */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+::view-transition-old(root) {
+  animation-name: fade-out-scale-down;
+}
+::view-transition-new(root) {
+  animation-name: fade-in-scale-up;
+}
+
+@keyframes fade-out-scale-down {
+  to { opacity: 0; transform: scale(0.98); }
+}
+@keyframes fade-in-scale-up {
+  from { opacity: 0; transform: scale(1.02); }
+}
+
+/* =========================================
+   6. 文档内容滚动浮现 (Scroll Driven)
+   ========================================= */
+/* 初始状态：透明且下沉 */
+.vp-doc > div > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  /* 使用 CSS 变量控制级联延迟 */
+  transition-delay: calc(var(--i, 0) * 0.08s);
+}
+
+/* 激活状态：完全显示 */
+.vp-doc > div > *.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 定义不同元素的延迟索引，制造波浪式入场感 */
+.vp-doc h1 { --i: 0; }
+.vp-doc blockquote { --i: 1; }
+.vp-doc p { --i: 2; }
+.vp-doc h2 { --i: 3; }
+.vp-doc ul, .vp-doc ol { --i: 4; }
+.vp-doc .custom-block { --i: 5; }
+.vp-doc img { --i: 6; }

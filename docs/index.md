@@ -17,10 +17,17 @@ hero:
 features:
   - title: 🖱️ 键鼠无缝流转
     details: 基于 DeskFlow，一套键鼠控制双机，剪切板毫秒级同步。
+    link: /1-input-share
+    
   - title: ⌨️ 完美键位映射
     details: 在 Mac 上沿用 Windows 的 Ctrl+C/V 肌肉记忆，无需改变习惯。
+    link: /2-key-mapping
+
   - title: 📂 极速文件通道
     details: SMB 协议挂载硬盘 + LocalSend 随手快传，跑满局域网带宽。
+    link: /3-file-share
+
   - title: 🔊 音频零延迟
     details: Mac 声音通过 Windows 音箱播放，硬件直连 0 延迟体验。
+    link: /4-audio-share
 ---
