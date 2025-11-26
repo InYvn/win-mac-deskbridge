@@ -80,4 +80,4 @@ Now, your dual-machine experience should be highly unified:
 * Caps Lock = **Caps Lock** (Universal for Win/Mac)
 * F1-F12 = **Standard Function Keys** (Universal for Win/Mac)
 
-Please proceed to the next section for file transfer: **[📂 High-Speed File Tunnel](./en/3-file-share.md)**
+Please proceed to the next section for file transfer: **[📂 High-Speed File Tunnel](./3-file-share.md)**

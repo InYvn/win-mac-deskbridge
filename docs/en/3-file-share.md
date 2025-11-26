@@ -75,4 +75,4 @@ If you don't want to configure complex network sharing and just want to send a p
 
 You have now established a file transfer tunnel between both ends.
 
-Please proceed to the final section to solve audio issues: **[🔊 Zero-Latency Audio Bridge](./en/4-audio-share.md)**
+Please proceed to the final section to solve audio issues: **[🔊 Zero-Latency Audio Bridge](./4-audio-share.md)**

@@ -108,4 +108,4 @@ After installation, DeskFlow **must** obtain macOS system-level permissions to c
 
 After successfully connecting, you may find Windows shortcuts (like copy/paste) awkward, or F1 keys not working.
 
-Please proceed to the next section: **[⌨️ Key Mapping Configuration](./en/2-key-mapping.md)**
+Please proceed to the next section: **[⌨️ Key Mapping Configuration](./2-key-mapping.md)**
