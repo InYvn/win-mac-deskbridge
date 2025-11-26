@@ -12,7 +12,7 @@ hero:
       link: /1-input-share
     - theme: alt
       text: 查看 GitHub
-      link: https://github.com/你的用户名/win-mac-deskbridge
+      link: https://github.com/inYvn/win-mac-deskbridge
 
 features:
   - title: 🖱️ 键鼠无缝流转

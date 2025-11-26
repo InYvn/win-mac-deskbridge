@@ -32,7 +32,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名/win-mac-deskbridge' }
+      { icon: 'github', link: 'https://github.com/inYvn/win-mac-deskbridge' }
     ],
 
     footer: {
