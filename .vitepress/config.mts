@@ -26,7 +26,8 @@ export default defineConfig({
           { text: '🖱️ 键鼠与剪切板', link: '/1-input-share' },
           { text: '⌨️ 键位映射', link: '/2-key-mapping' },
           { text: '📂 文件极速传输', link: '/3-file-share' },
-          { text: '🔊 音频零延迟共享', link: '/4-audio-share' }
+          { text: '🔊 音频零延迟共享', link: '/4-audio-share' },
+          { text: '🧪 自动化脚本 (Beta)', link: '/5-automation' }
         ]
       }
     ],
