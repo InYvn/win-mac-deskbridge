@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Win-Mac DeskBridge"
-  text: "Desktop Bridge"
+  text: "Break System Boundaries"
   tagline: No more cables. Build the ultimate seamless workflow between Windows and macOS.
   actions:
     - theme: brand
@@ -19,7 +19,7 @@ features:
     link: /en/1-input-share
     
   - title: ⌨️ Perfect Key Mapping
-    details: Use Windows Ctrl+C/V muscle memory on Mac. No need to change your habits.
+    details: Unify Ctrl+C/V muscle memory. Integrated Hammerspoon script to auto-switch input methods across screens.
     link: /en/2-key-mapping
 
   - title: 📂 High-Speed File Tunnel

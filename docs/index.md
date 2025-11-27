@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Win-Mac DeskBridge"
-  text: "局域网极致互联方案"
+  text: "打破系统边界"
   tagline: 拒绝来回插拔。构建 Windows 与 macOS 的极致无缝协作流。
   actions:
     - theme: brand
@@ -20,7 +20,7 @@ features:
     link: /1-input-share
     
   - title: ⌨️ 完美键位映射
-    details: 在 Mac 上沿用 Windows 的 Ctrl+C/V 肌肉记忆，无需改变习惯。
+    details: 统一 Ctrl+C/V 肌肉记忆，集成 Hammerspoon 实现跨屏输入法自动切换。
     link: /2-key-mapping
 
   - title: 📂 极速文件通道

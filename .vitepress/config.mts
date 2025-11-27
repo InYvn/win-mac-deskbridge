@@ -27,6 +27,7 @@ export default defineConfig({
             items: [
               { text: '🖱️ 键鼠与剪切板', link: '/1-input-share' },
               { text: '⌨️ 键位映射', link: '/2-key-mapping' },
+              { text: '⚡️ 进阶：输入法自动切换', link: '/2-1-input-fix' },
               { text: '📂 文件极速传输', link: '/3-file-share' },
               { text: '🔊 音频零延迟共享', link: '/4-audio-share' },
               { text: '🧪 自动化脚本 (Beta)', link: '/5-automation' }
@@ -60,6 +61,7 @@ export default defineConfig({
             items: [
               { text: '🖱️ Input & Clipboard', link: '/en/1-input-share' },
               { text: '⌨️ Key Mapping', link: '/en/2-key-mapping' },
+              { text: '⚡️ Pro: Auto Input Switch', link: '/en/2-1-input-fix' },
               { text: '📂 File Tunnel', link: '/en/3-file-share' },
               { text: '🔊 Audio Bridge', link: '/en/4-audio-share' },
               { text: '🧪 Automation (Beta)', link: '/en/5-automation' }
