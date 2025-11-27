@@ -19,7 +19,7 @@ features:
     link: /en/1-input-share
     
   - title: ⌨️ Perfect Key Mapping
-    details: Unify Ctrl+C/V muscle memory. Integrated Hammerspoon script to auto-switch input methods across screens.
+    details: Unify Ctrl+C/V muscle memory. Smartly prevents Mac IME interception, fixing broken shortcuts on Windows.
     link: /en/2-key-mapping
 
   - title: 📂 High-Speed File Tunnel

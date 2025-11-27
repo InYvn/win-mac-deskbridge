@@ -29,10 +29,11 @@
 基于 **DeskFlow** (原 Synergy 开源分支) 的搭建指南。
 * **核心价值**：免费、开源、适配最新 macOS (Sonoma/Sequoia/Tahoe)。
 
-### 2. [⌨️ 键位映射：Windows 习惯优先 (Key Mapping)](./docs/2-key-mapping.md)
-**这是本方案的灵魂。** 如果你习惯了 Windows 的键位，不需要强迫自己适应 Mac 键位。
-* **映射逻辑**：将 Win 键盘的 `Ctrl` 完美映射为 Mac 的 `Command`，实现复制粘贴手感统一。
-* **冲突解决**：解决 F1-F12 功能键被系统劫持问题、修复 Fn 键锁死问题。
+### 2. [⌨️ 键位映射 & 输入法修复 (Key Mapping)](./docs/2-key-mapping.md)
+**这是本方案的灵魂。** 如果你习惯了 Windows 的键位，无需强迫自己适应 Mac 的反人类键位。
+* **映射逻辑**：将 Win 键盘的 `Ctrl` 完美映射为 Mac 的 `Command`，实现复制粘贴手感完全统一。
+* **冲突解决**：解决 F1-F12 功能键被系统占用问题、修复 Fn 键状态锁死。
+* **智能输入法**：集成 Hammerspoon 脚本，**自动规避 Mac 中文输入法对按键的拦截**，彻底解决“跨屏后打不出字、快捷键失效”的痛点。
 
 ### 3. [📂 极速文件传输 (File Tunnel)](./docs/3-file-share.md)
 两套互补方案，满足不同场景：

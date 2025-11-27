@@ -30,11 +30,11 @@ Setup guide based on **DeskFlow** (Open-source fork of Synergy).
 * **Value**: Free, open-source, supports macOS Sonoma/Sequoia.
 * **Troubleshooting**: Fix macOS permission errors, `invalid character` config bugs, etc.
 
-### 2. [⌨️ Key Mapping](./docs/en/2-key-mapping.md)
+### 2. [⌨️ Key Mapping & IME Fix](./docs/en/2-key-mapping.md)
 **The soul of this solution.** Never force yourself to adapt to a different layout.
 * **Mapping**: Perfectly map Win `Ctrl` to Mac `Command` (or vice versa).
 * **Fixes**: Solve F1-F12 system hijacking and Fn-lock issues.
-* **Input Method**: Unify language switching shortcuts.
+* **Smart IME**: Integrated Hammerspoon script to **prevent Mac's IME from intercepting keystrokes**, solving the "typing/shortcuts failure on Windows" issue.
 
 ### 3. [📂 File Tunnel](./docs/en/3-file-share.md)
 Two complementary strategies:

@@ -9,7 +9,7 @@ local abcID = "com.apple.keylayout.ABC"
 
 -- 📏 参数微调
 local edgeZone = 10        -- 边缘判定宽度
-local centerZone = 100     -- 中心判定半径 (在这个圈内都算中心)
+local centerZone = 500     -- 中心判定半径 (在这个圈内都算中心)
 local jumpTimeLimit = 0.2  -- 瞬移时间限制 (0.2秒内从边缘到中心才算瞬移)
 
 -- 🔒 状态变量

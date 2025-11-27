@@ -14,9 +14,9 @@ Our script detects this "teleportation":
 ## 2. Installation
 
 1.  **Install Hammerspoon**:
-    <三点>bash
+    ```bash
     brew install --cask hammerspoon
-    <三点>
+    ```
     *(Or download from [Official Site](https://www.hammerspoon.org/))*
 
 2.  **Configure**:
